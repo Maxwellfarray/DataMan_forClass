@@ -1,3 +1,4 @@
+#make module importable
 def mathParse(str):
     b = 0
     new = False
