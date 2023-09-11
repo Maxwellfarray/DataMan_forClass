@@ -24,13 +24,6 @@ def getInputNum():
         passing = passForNumber(numbOne)
     return numbOne
 
-def getInputNum():
-    passing = 0
-    while (passing == 0):
-        numbOne = input('Enter Symbol: ')
-        passing = passForNumber(numbOne)
-    return numbOne
-
 def getInputUnsafe():
     numbOne = input('Enter number: ')
     return numbOne
