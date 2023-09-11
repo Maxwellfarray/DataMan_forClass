@@ -1,4 +1,14 @@
 #make module importable
+'''
+bug 
+3*45
+3
+*
+4
+5
+['3', '*', '4', '5']
+end
+'''
 def mathParse(str):
     b = 0
     new = False
@@ -21,9 +31,11 @@ def mathParse(str):
     print(mathprep)        
     print("end")
 
-
-egg = input()
-mathParse(egg)
-
+def main():
+    egg = input()
+    mathParse(egg)
+#only run main if not import
+if __name__ == '__main__':
+    main()
 
     
