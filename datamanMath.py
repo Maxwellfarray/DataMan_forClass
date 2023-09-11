@@ -1,14 +1,4 @@
 #make module importable
-'''
-bug 
-3*45
-3
-*
-4
-5
-['3', '*', '4', '5']
-end
-'''
 def mathParse(str):
     b = 0
     new = False
@@ -22,6 +12,7 @@ def mathParse(str):
             if new == True:
                 b = b + 1
                 mathprep.append(i)
+                new = False
             else:
                 mathprep[b] = mathprep[b] + i
         elif (i=='+' or i=='-' or i== '/' or i=='*'):
