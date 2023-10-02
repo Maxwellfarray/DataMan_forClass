@@ -7,7 +7,7 @@ def mathParse(stri):
     for i in stri:
         if i.isalpha():
             break;
-        elif i.isnumeric():
+        elif i.isnumeric() or i=='.':
             if new == True:
                 b = b + 1
                 mathprep.append(i)
