@@ -66,7 +66,8 @@ def mathDo(preped):
                  del preped[pos1]
                  del preped[pos2-1]
             b = b + 1
-        return preped
+            outSolution = preped[0]
+        return outSolution
 
 # Addintion calculation
 def add(numbOne, numbTwo):
@@ -86,6 +87,12 @@ def mult(numbOne, numbTwo):
 def dev(numbOne, numbTwo):
     result = float(numbOne) / float(numbTwo)
     return result
+def doMath(inEquation):
+    parsed = mathParse(inEquation)
+    outSolution = mathDo(parsed)
+    return outSolution
+    
+    
 
 def main():
     egg = input()
@@ -97,4 +104,3 @@ def main():
 #only run main if not import
 if __name__ == '__main__':
     main()
-    print(17*9+23-2/6)
