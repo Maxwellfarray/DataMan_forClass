@@ -100,6 +100,10 @@ def main():
     print(eeg)
     gee = mathDo(eeg)
     print(gee)
+
+def truncate(n, decimals = 0):
+    multiplier = 10 ** decimals
+    return int(n * multiplier) / multiplier
     
 #only run main if not import
 if __name__ == '__main__':
