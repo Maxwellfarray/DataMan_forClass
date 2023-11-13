@@ -43,7 +43,7 @@ def mathGame():
     while correct == False:
         if i == 0:
             print(outputQuestion)
-            attempt = input("Enter the answer the question above rounded to the next whole number: ")  
+            attempt = input("Enter the answer the question above rounded to the next whole number: ")
         else:
             attempt = input("wrong try again: ")
         i = i + 1
