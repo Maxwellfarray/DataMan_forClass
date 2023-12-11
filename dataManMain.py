@@ -19,12 +19,9 @@ while go == 1:
     match control:
         case "1":
             mMod.main()
-            break;
         case '2':
             dMod.main()
-            break;
         case '3':
             go = 0
-            break;
         case _:
             print('please use only the given options')
